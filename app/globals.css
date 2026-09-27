@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #080B0A;
+  --bg-secondary: #101512;
+  --bg-card: #141A16;
+  --gold-primary: #C8A96B;
+  --gold-bright: #E3C77F;
+  --gold-dark: #9E8148;
+  --text-main: #E9DFC9;
+  --text-muted: #9A9C91;
+  --green-muted: #9CAF84;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080B0A;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(200, 169, 107, 0.25);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 169, 107, 0.5);
+}
+
+/* Custom Typography Utility */
+.font-serif-heading {
+  font-family: var(--font-cormorant), 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Mandala & Cyber Visual Effects */
+.gold-glow-box {
+  box-shadow: 0 0 25px rgba(200, 169, 107, 0.08);
+  border: 1px solid rgba(200, 169, 107, 0.18);
+}
+
+.gold-glow-box:hover {
+  box-shadow: 0 0 35px rgba(227, 199, 127, 0.16);
+  border: 1px solid rgba(227, 199, 127, 0.35);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #C8A96B 0%, #E3C77F 50%, #9E8148 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtle-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(200, 169, 107, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(200, 169, 107, 0.03) 1px, transparent 1px);
+}
+
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinSlowReverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 80s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spinSlowReverse 100s linear infinite;
+}
