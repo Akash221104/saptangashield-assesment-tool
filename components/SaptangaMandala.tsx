@@ -21,8 +21,8 @@ export default function SaptangaMandala({
   // Compute node coordinates around heptagon
   const nodes = saptangaLimbs.map((limb, i) => {
     const angle = -Math.PI / 2 + (i * 2 * Math.PI) / 7;
-    const x = cx + radius * Math.cos(angle);
-    const y = cy + radius * Math.sin(angle);
+    const x = Number((cx + radius * Math.cos(angle)).toFixed(2));
+    const y = Number((cy + radius * Math.sin(angle)).toFixed(2));
     return { ...limb, x, y, angle };
   });
 
@@ -78,14 +78,15 @@ export default function SaptangaMandala({
           {[0, 60, 120, 180, 240, 300].map((deg) => (
             <circle
               key={deg}
-              cx={cx + (radius + 40) * Math.cos((deg * Math.PI) / 180)}
-              cy={cy + (radius + 40) * Math.sin((deg * Math.PI) / 180)}
+              cx={Number((cx + (radius + 40) * Math.cos((deg * Math.PI) / 180)).toFixed(2))}
+              cy={Number((cy + (radius + 40) * Math.sin((deg * Math.PI) / 180)).toFixed(2))}
               r="2"
               fill="#C8A96B"
               fillOpacity="0.4"
             />
           ))}
         </g>
+
 
         {/* Outer Mandala Rotating Geometry 2 (Counter direction) */}
         <g className="origin-center animate-spin-slow-reverse">

@@ -87,3 +87,22 @@ body {
 .animate-spin-slow-reverse {
   animation: spinSlowReverse 100s linear infinite;
 }
+
+/* Print Optimization */
+@media print {
+  header, footer, .no-print {
+    display: none !important;
+  }
+  body {
+    background-color: #080B0A !important;
+    color: #E9DFC9 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  .printable-report {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+  }
+}
+
