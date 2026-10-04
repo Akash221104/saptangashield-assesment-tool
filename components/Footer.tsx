@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className="bg-bg-primary border-t border-ancient-border py-12 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start pb-8 border-b border-ancient-border/40">
-          
+
           {/* Brand Info */}
           <div className="md:col-span-6 space-y-3">
             <Link href="/" className="flex items-center gap-3 group">
@@ -76,7 +76,7 @@ export default function Footer() {
         {/* Bottom Copyright & Disclaimer bar */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between text-[11px] font-mono text-text-muted gap-4">
           <div>
-            &copy; {new Date().getFullYear()} SaptangaShield • EAA Spot Academic Subject Project
+            &copy; {new Date().getFullYear()} SaptangaShield • EAA Sports Academic Subject Project
           </div>
           <div className="text-gold-primary/70">
             Ancient Indian Strategic Wisdom &bull; Modern Cyber Command Center

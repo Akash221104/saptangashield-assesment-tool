@@ -165,6 +165,6 @@ export const projectMeta = {
   title: "SaptangaShield",
   tagline: "Ancient Wisdom. Modern Defense.",
   subtitle: "ANCIENT STRATEGY • MODERN CYBER DEFENSE",
-  academicNote: "Academic Prototype • EAA Spot",
+  academicNote: "Academic Prototype • EAA Sports",
   disclaimer: "Saptanga is an ancient Arthashastra framework describing seven essential elements of a resilient kingdom. SaptangaShield uses this framework as inspiration for a modern cybersecurity defense model."
 };
