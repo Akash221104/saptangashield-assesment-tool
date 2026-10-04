@@ -18,7 +18,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "SaptangaShield — Ancient Wisdom. Modern Defense.",
   description: "Cybersecurity framework inspired by Kautilya's Saptanga — seven limbs of a kingdom translated into seven interconnected cyber defense pillars.",
-  keywords: ["SaptangaShield", "Cybersecurity", "Kautilya", "Arthashastra", "Security Governance", "Academic Prototype", "EAA Spot"],
+  keywords: ["SaptangaShield", "Cybersecurity", "Kautilya", "Arthashastra", "Security Governance", "Academic Prototype", "EAA Sport"],
 };
 
 export default function RootLayout({

@@ -129,7 +129,8 @@ export default function AssessmentEngine() {
   const progressPercent = Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
 
   return (
-    <div className="max-w-3xl mx-auto w-full px-4 py-6 sm:py-10 space-y-6">
+    <div className="max-w-5xl mx-auto w-full space-y-6">
+
       
       {/* TOP HEADER & PROGRESS */}
       <div className="bg-bg-card border border-ancient-border/80 rounded-2xl p-4 sm:p-6 space-y-4 shadow-[0_0_30px_rgba(8,11,10,0.8)]">

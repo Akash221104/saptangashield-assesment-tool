@@ -13,8 +13,10 @@ export default function AssessmentPage() {
     <div className="min-h-screen flex flex-col bg-bg-primary text-text-main">
       <Navbar />
 
-      <main className="flex-grow py-8 sm:py-12 subtle-grid relative">
-        <AssessmentEngine />
+      <main className="flex-grow py-6 sm:py-10 subtle-grid relative w-full">
+        <div className="max-w-7xl lg:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+          <AssessmentEngine />
+        </div>
       </main>
 
       <Footer />
